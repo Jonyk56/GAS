@@ -1,5 +1,6 @@
 export const entry = ({ Notification, RunningConfig, Menu, StaticConfig }) => {
-    RunningConfig.on('aTabHasBeenCreated', ({ client, instance, directory, tabElement }) => {
+    RunningConfig.on('aTabHasBeenCreated', ({ client, instance, directory, tabElement, isEditor }) => {
+        if(!isEditor) return
         client.do('onChanged', {
             instance,
             action() {
