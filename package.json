@@ -2,7 +2,7 @@
 	"name": "GravitonAutoSave",
 	"id": "GAS",
 	"version": "1.0.0",
-	"description": "AUTO SAAAAAAAAVE!",
+	"description": "Graviton plugin to automatically save when editing a file.",
 	"mainSrc": "src/index.js",
 	"mainDev": "dist/index.js",
 	"main": "index.js",
