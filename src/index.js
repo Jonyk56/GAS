@@ -5,7 +5,7 @@ export const entry = ({ Notification, RunningConfig, Menu, StaticConfig }) => {
             instance,
             action() {
                 if (StaticConfig.data.GAS == true) {
-                    RunningConfig.emit('command.saveCurrentFile')
+                    setTimeout(() => RunningConfig.emit('command.saveCurrentFile'), 5000);
                 }
             } 
         })
